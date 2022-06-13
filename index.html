@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Blogin</title>
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="header-container main-layout flex align-center space-between">
+            <div class="logo">Blogin<span>.</span></div>
+            <ul class="nav-bar clean-list flex">
+                <li><a href="#" class="active">Journal</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#fb">Contact</a></li>
+            </ul>
+            <button onclick="toggleMenu(this)" class="menu-toggle">☰</button>
+        </div>
+    </header>
+    <main class="main-content main-layout card-layout">
+        <div class="card flex">
+            <img src="img/001.png" alt="blog img" class="card-img">
+            <div class="card-content">
+                <h2>DUIS AUTE IRURE DOLOR IN
+                    HENDERIT IN VOLUPTATE.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...</p>
+                <button onclick="openModal()" class="btn-round btn-arrow"> Continue Reading</button>
+            </div>
+        </div>
+        <div class=" card flex">
+            <img src="img/002.png" alt="blog img" class="card-img">
+            <div class="card-content">
+                <h2>DUIS AUTE IRURE DOLOR IN
+                    HENDERIT IN VOLUPTATE.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...</p>
+                <button class="btn-round btn-arrow"> Continue Reading</button>
+            </div>
+        </div>
+        <div class=" card flex">
+            <img src="img/003.png" alt="blog img" class="card-img">
+            <div class="card-content">
+                <h2>DUIS AUTE IRURE DOLOR IN
+                    HENDERIT IN VOLUPTATE.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla
+                    pariatur...</p>
+                <button class="btn-round btn-arrow"> Continue Reading</button>
+            </div>
+        </div>
+        <div class=" paging flex space-between align-center">
+            <a href="#">← previous</a>
+            <a href="#">next →</a>
+        </div>
+    </main>
+
+    <footer class="footer flex footer-layout align-center">
+        <div class="logo">Blogin<span>.</span></div>
+        <p class="copyright">&copy; 2022 Blogin.com - All Rights Reserved - Find more free Templates at
+            <span>Pixelhint.com</span>
+        </p>
+
+        <div class="social-links flex">
+            <a id="fb" href="#" class="fa fa-facebook-f"></a>
+            <a id="twitter" href="#" class="fa fa-twitter"></a>
+            <a id="be" href="#" class="fa fa-be"></a>
+            <a id="linkedin" href="#" class="fa fa-linkedin"></a>
+
+        </div>
+    </footer>
+
+
+    <div class="modal">
+        <div class="modal-content">
+            <button onclick="closeModal()"" class=" modal-btn">X</button>
+            <h2 class="modal-title">Join us to get access to the latest stories!”</h2>
+            <input type="email" nameemail id="" placeholder="Input email here">
+            <button ">Sumbit</button>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleMenu(elBtn) {
+            document.body.classList.toggle('menu-open');
+            document.body.classList.contains('menu-open') ? elBtn.innerText = 'X' : elBtn.innerText = '☰';
+        }
+
+        function openModal() {
+            document.querySelector('.modal').style.transform = 'translateY(0%)'
+        }
+        function closeModal() {
+            document.querySelector('.modal').style.transform = 'translateY(-150%)'
+        }
+
+
+    </script>
+
+
+</body>
+
+
+
+</html>

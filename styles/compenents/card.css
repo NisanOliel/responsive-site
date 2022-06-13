@@ -1,0 +1,33 @@
+.card {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.card .card-img {
+    margin-inline-end: 2.5625rem;
+    width: 50%;
+    align-self: flex-start;
+}
+
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-content p:last-of-type {
+    flex: 1;
+}
+
+.paging {
+    padding: 30px;
+    height: 75px;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    border: 1px solid var(--clr6);
+}
+
+.paging a {
+    color: #818181;
+    font-family: Lato-bold;
+}
